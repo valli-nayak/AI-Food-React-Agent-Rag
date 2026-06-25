@@ -34,10 +34,6 @@ if user_query := st.chat_input("Ask about cooking recipes or nutritional values.
         # Safe state update stream loop execution blocks
         for update in app.stream(inputs, config=config, stream_mode="updates"):
             for node, value in update.items():
-                print("Node", node)
-                print("Value", value)
-                
-
                 if node == "agent":
                     last_msg = value["messages"][-1]
                     

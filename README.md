@@ -1,7 +1,7 @@
 # 🍔 GSB Food AI Assistant
 **AI-Food-React-Agent-Rag** is an intelligent culinary intelligence platform specifically designed to preserve and analyze **Gowd Saraswat Brahmin (GSB) cuisine**. Traditional GSB dishes often rely on highly localized ingredients, and precise fermentation techniques (such as Surnali, Sanna, or Pathrode) that standard food apps fail to parse. This application allows users to query traditional GSB recipes, automatically extracting authentic ingredient lists and calculating complete, deterministic caloric and macronutrient profiles.Built on a Python **LangGraph** orchestration loop, the application uses a ReAct (Reasoning and Action) agent workflow to dynamically clean and translate regional culinary terms. It integrates directly with the **USDA FoodData Central API** to fetch certified nutritional foundations per ingredient. To drive context-aware recipe parsing, the system implements an advanced Retrieval-Augmented Generation (RAG) architecture backed by a **local Chroma DB vector store stored directly on the hard drive** for persistent, zero-cloud cookbook indexing. Finally, the system leverages **Streamlit caching mechanisms** to memory-map heavy vector lookups and redundant API queries, ensuring an efficient, near-instantaneous user experience.
 
-Powered by **Streamlit**, **LangChain**, and **Google Gemini 2.5**.
+Powered by **Streamlit**, **LangChain**, **LangGraph** and **Google Gemini 2.5**.
 
 ### 🤖 System Architecture
 

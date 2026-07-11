@@ -8,7 +8,12 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 USDA_API_KEY = os.getenv("USDA_API_KEY", "DEMO_KEY")
 PERSIST_DIRECTORY = "./chroma_db"
 PDF_FILE_PATH = "gsbcookbook.pdf"
+LANG_CHAIN_API_KEY = os.getenv("LANG_CHAIN_API_KEY")
 
 if not GOOGLE_API_KEY:
     st.error("❌ Missing GOOGLE_API_KEY in the environment setup.")
+    st.stop()
+
+if not LANG_CHAIN_API_KEY:
+    st.error("❌ Missing LANG_CHAIN_API_KEY in the environment setup.")
     st.stop()
